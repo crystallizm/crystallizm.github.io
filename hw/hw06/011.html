@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>011</title>
+    <style>
+        * {
+            text-align: center;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        #top {
+            float: right;
+            padding: 10px;
+        }
+
+        #logo {
+            padding: 70px;
+        }
+
+        #top a {
+            text-decoration: none;
+            color: #525252;
+        }
+
+        #menu {
+            clear: both;
+            height: 40px;
+            background-color: #db9eff;
+            color: white;
+            padding-top: 15px;
+            font-size: 17px;
+        }
+
+        #menu a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #menu li {
+            display: inline;
+        }
+
+        .item {
+            margin: 0 15px;
+        }
+
+        h2 {
+            clear: both;
+            height: 40px;
+            color: #75b1ff;
+            padding-top: 15px;
+            font-size: 35px;
+        }
+
+        table {
+            margin: 50px;
+            width: 90%;
+            border-top: 2px solid #525252;
+
+        }
+
+        th {
+            padding: 10px 8px;
+            background-color: #f9f9f9;
+            color: #525252;
+            border-bottom: 1px solid #c2c2c2;
+        }
+
+        td {
+            padding: 10px 8px;
+            text-align: center;
+            color: #525252;
+            border-bottom: 1px solid #c2c2c2;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="head">
+        <div id="top">
+            <a href="./login.html">로그인 및 회원가입</a> |
+            <!--<a href="./cart.html">장바구니</a> |-->
+            <a href="./notice.html">공지사항</a> |
+            <a href="./ServiceCenter.html">고객센터</a>
+        </div>
+        <div id="logo">
+            <a href="./hw06.html"><img src="./img/logo.png"></a>
+        </div>
+    </div>
+    <ul id="menu">
+        <li class="item"><a href="./topseven.html">TOP 7</a></li>
+        <li>|</li>
+        <li class="item"><a href="./character.html">캐릭터</a></li>
+        <li>|</li>
+        <li class="item"><a href="./fancy.html">문구/팬시</a></li>
+        <li>|</li>
+        <li class="item"><a href="./diary.html">다꾸 용품</a></li>
+    </ul>
+    <h2>상품 상세정보</h2>
+    <table>
+        <td><img src="./img/top6.PNG"></td>
+        <td>
+            <table>
+                <tr>
+                    <td>상품명</td>
+                    <td>[핑크 남매] 짱구는못말려 미니 떡메모지</td>
+                </tr>
+                <tr>
+                    <td>가격</td>
+                    <td>1,800원</td>
+                </tr>
+                <tr>
+                    <td>상품소개</td>
+                    <td>짱구는못말려 일러스트가 가득한 미니 떡메모지입니다.</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <form>
+                            <select name="howMany">
+                                <option value="1" selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select> &nbsp;개
+                            <button type="button" onclick="alert('장바구니에 담겼습니다.')">장바구니에 담기</button>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </table>
+</body>
+
+</html>
