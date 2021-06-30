@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>아기자기 문구점</title>
+    <style>
+        * {
+            text-align: center;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        #top {
+            float: right;
+            padding: 10px;
+        }
+
+        #logo {
+            padding: 70px;
+        }
+
+        #top a {
+            text-decoration: none;
+            color: #525252;
+        }
+
+        #menu {
+            clear: both;
+            height: 40px;
+            background-color: #db9eff;
+            color: white;
+            padding-top: 15px;
+            font-size: 17px;
+        }
+
+        #menu a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #menu li {
+            display: inline;
+        }
+
+        .item {
+            margin: 0 15px;
+        }
+
+        @media(max-width:550px) {
+            img {
+                height: 100%;
+                width: 100%;
+            }
+
+            #menu {
+                font-size: 9px;
+                background-color: #75b1ff;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="head">
+        <div id="top">
+            <a href="./login.html">로그인 및 회원가입</a> |
+            <!--<a href="./cart.html">장바구니</a> |-->
+            <a href="./notice.html">공지사항</a> |
+            <a href="./ServiceCenter.html">고객센터</a>
+        </div>
+        <div id="logo">
+            <a href="./hw06.html"><img src="./img/logo.png"></a>
+        </div>
+    </div>
+    <ul id="menu">
+        <li class="item"><a href="./topseven.html">TOP 7</a></li>
+        <li>|</li>
+        <li class="item"><a href="./character.html">캐릭터</a></li>
+        <li>|</li>
+        <li class="item"><a href="./fancy.html">문구/팬시</a></li>
+        <li>|</li>
+        <li class="item"><a href="./diary.html">다꾸 용품</a></li>
+    </ul>
+</body>
+
+</html>
