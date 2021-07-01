@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>아기자기 문구점</title>
+    <style>
+        * {
+            text-align: center;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #top {
+            float: right;
+            padding: 10px;
+        }
+
+        #logo {
+            padding: 70px;
+        }
+
+        #top a {
+            text-decoration: none;
+            color: #525252;
+        }
+
+        header nav {
+            clear: both;
+            height: 80px;
+            background-color: #db9eff;
+            color: white;
+            padding-top: 15px;
+            font-size: 17px;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+            ;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: white;
+        }
+
+        header nav li {
+            display: inline;
+        }
+
+        .item {
+            margin: 0 15px;
+        }
+
+        @media(max-width:550px) {
+            img {
+                height: 100%;
+                width: 100%;
+            }
+
+            nav {
+                font-size: 15px;
+                background-color: #75b1ff;
+            }
+        }
+
+        /*article start*/
+        #callcenter {
+            display: block;
+            position: relative;
+            float: left;
+            margin: 0px 0px 0px 0px;
+            padding: 50px 0px 0px 0px;
+            width: 33.333%;
+        }
+
+        #callcenter h2 {
+            padding: 0px 0px 25px 0px;
+            font: 700 12px 'Karla', sans-serif;
+            color: #464646;
+        }
+
+        #callcenter ul {
+            padding: 0px 0px 0px 0px;
+            list-style: none;
+        }
+
+        #callcenter li {
+            font: 400 12px 'Roboto', Nanum Barun Gothic, sans-serif;
+            color: #252525;
+            padding: 0px 0px 0px 0px;
+        }
+
+        #callcenter li strong {
+            font: 400 12px 'Roboto', Nanum Barun Gothic, sans-serif;
+            color: #252525;
+            padding: 0px 4px 0px 0px;
+        }
+
+        #callcenter li.end {
+            font: 400 12px 'Roboto', Nanum Barun Gothic, sans-serif;
+            color: #000000;
+            padding: 4px 0px 0px 0px;
+        }
+
+        #bank_info {
+            display: block;
+            position: relative;
+            float: left;
+            margin: 0px 0px 0px 0px;
+            padding: 50px 0px 0px 0px;
+            width: 20%;
+        }
+
+        #bank_info h2 {
+            padding: 0px 0px 25px 0px;
+            font: 700 12px 'Karla', sans-serif;
+            color: #464646;
+        }
+
+        #bank_info ul {
+            padding: 0px 0px 0px 0px;
+            list-style: none;
+        }
+
+        #bank_info li {
+            font: 400 12px 'Roboto', Nanum Barun Gothic, sans-serif;
+            color: #252525;
+            padding: 0px 0px 0px 0px;
+        }
+
+        #bank_info li strong {
+            font: 400 12px 'Roboto', Nanum Barun Gothic, sans-serif;
+            color: #252525;
+            padding: 0px 4px 0px 0px;
+        }
+
+        #bank_info li.end {
+            font: 400 12px 'Roboto', Nanum Barun Gothic, sans-serif;
+            color: #000000;
+            padding: 4px 0px 0px 0px;
+        }
+
+        #guide {
+            display: block;
+            position: relative;
+            float: left;
+            margin: 0px 0px 0px 0px;
+            padding: 50px 0px 0px 0px;
+            width: 20%;
+        }
+
+        #guide h2 {
+            padding: 0px 0px 25px 0px;
+            font: 700 12px 'Karla', sans-serif;
+            color: #464646;
+        }
+
+        #guide ul {
+            padding: 0px 0px 0px 0px;
+            list-style: none;
+        }
+
+        #guide li {
+            font: 400 12px 'Roboto', Nanum Barun Gothic, sans-serif;
+            color: #252525;
+            padding: 0px 0px 0px 0px;
+        }
+
+        #guide li strong {
+            font: 400 12px 'Roboto', Nanum Barun Gothic, sans-serif;
+            color: #252525;
+            padding: 0px 4px 0px 0px;
+        }
+
+        #guide li.end {
+            font: 400 12px 'Roboto', Nanum Barun Gothic, sans-serif;
+            color: #000000;
+            padding: 4px 0px 0px 0px;
+        }
+
+        footer{
+            padding:20px 0 0 15px;
+            border-top:solid 3px;
+            color:#525252;
+        }
+        
+        footer article{
+            float:left;
+        }
+
+        footer h2{
+            padding: 0px 0px 25px 0px;
+            font: 700 12px 'Karla', sans-serif;
+            color: #464646;
+        }
+
+        footer ul{
+            padding: 0px 0px 0px 0px;
+            list-style: none;
+        }
+
+        footer li {
+            font: 400 12px 'Roboto', Nanum Barun Gothic, sans-serif;
+            color: #252525;
+            padding: 0px 0px 0px 0px;
+        }
+
+        /*article end*/
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="top">
+            <a href="./login.html">로그인 및 회원가입</a> |
+            <!--<a href="./cart.html">장바구니</a> |-->
+            <a href="./notice.html">공지사항</a> |
+            <a href="./ServiceCenter.html">고객센터</a>
+        </div>
+        <div id="logo">
+            <a href="./hw07.html"><img src="./img/logo.png"></a>
+        </div>
+        <nav>
+            <ul>
+                <li class="item"><a href="./topseven.html">TOP 7</a></li>
+                <li>|</li>
+                <li class="item"><a href="./character.html">캐릭터</a></li>
+                <li>|</li>
+                <li class="item"><a href="./fancy.html">문구/팬시</a></li>
+                <li>|</li>
+                <li class="item"><a href="./diary.html">다꾸 용품</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <img src="./img/banner.png">
+        </section>
+        <article id="callcenter">
+            <h2>입점문의</h2>
+            <ul>
+                <li>031-388-7656</li>
+                <li>
+                    <strong>월요일~금요일</strong>/10:00 ~ 17:00
+                </li>
+                <li>
+                    <strong>점심시간</strong>/12:00 ~ 13:00
+                </li>
+                <li>주말 공휴일 휴무</li>
+                <li class="end">
+                    <img src="./img/kakao_icon.png">카카오톡 플러스친구: 아기자기 문구점
+                </li>
+            </ul>
+        </article>
+
+        <article id="bank_info">
+            <h2>입금계좌</h2>
+            <ul>
+                <li>
+                    <strong>신한</strong>&nbsp;110-469-899-663
+                </li>
+                <li>
+                    <strong>국민</strong>&nbsp;592202-01-747801
+                </li>
+                <li>
+                    <strong>카카오뱅크</strong>&nbsp;3333-07-4808339
+                </li>
+                <li class="end">예금주 : 이수정</li>
+            </ul>
+        </article>
+        <article id="guide">
+            <h2>이용안내</h2>
+            <ul>
+                <li>회사소개</li>
+                <li>이용약관</li>
+                <li>개인정보처리방침</li>
+            </ul>
+            <article>
+                <h2>회사정보</h2>
+                <ul>
+                    <li>상호 : 아기자기 문구점</li>
+                    <li>대표자 : 이수정(shfid77@naver.com)</li>
+                    <li>사업자 등록번호 안내 : 110-97-12227</li>
+                    <li>주소 : 서울특별시 중구 세종대로 110</li>
+                </ul>
+            </article>
+        </article>
+    </main>
+</body>
+
+</html>

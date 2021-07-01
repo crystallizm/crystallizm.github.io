@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>다꾸 용품</title>
+    <style>
+        * {
+            text-align: center;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        #top {
+            float: right;
+            padding: 10px;
+        }
+
+        #logo {
+            padding: 70px;
+        }
+
+        #top a {
+            text-decoration: none;
+            color: #525252;
+        }
+
+        #menu {
+            clear: both;
+            height: 40px;
+            background-color: #db9eff;
+            color: white;
+            padding-top: 15px;
+            font-size: 17px;
+        }
+
+        #menu a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #menu li {
+            display: inline;
+        }
+
+        .item {
+            margin: 0 15px;
+        }
+
+        .write {
+            width: 300px;
+            height: 50px;
+            font-size: 20px;
+            text-align: left;
+        }
+
+        h2 {
+            clear: both;
+            height: 40px;
+            color: #75b1ff;
+            padding-top: 15px;
+            font-size: 35px;
+        }
+
+        table {
+            margin: 50px;
+            width: 90%;
+            border-top: 2px solid #525252;
+        }
+
+        th {
+            padding: 10px 8px;
+            background-color: #f9f9f9;
+            color: #525252;
+            border-bottom: 1px solid #c2c2c2;
+        }
+
+        td {
+            padding: 10px 8px;
+            text-align: center;
+            color: #525252;
+            border-bottom: 1px solid #c2c2c2;
+        }
+
+        @media(max-width:550px) {
+            img {
+                height: 100%;
+                width: 100%;
+            }
+
+            #menu {
+                font-size: 9px;
+                background-color: #75b1ff;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="head">
+        <div id="top">
+            <a href="./login.html">로그인 및 회원가입</a> |
+            <!--<a href="./cart.html">장바구니</a> |-->
+            <a href="./notice.html">공지사항</a> |
+            <a href="./ServiceCenter.html">고객센터</a>
+        </div>
+        <div id="logo">
+            <a href="./hw07.html"><img src="./img/logo.png"></a>
+        </div>
+    </div>
+    <ul id="menu">
+        <li class="item"><a href="./topseven.html">TOP 7</a></li>
+        <li>|</li>
+        <li class="item"><a href="./character.html">캐릭터</a></li>
+        <li>|</li>
+        <li class="item"><a href="./fancy.html">문구/팬시</a></li>
+        <li>|</li>
+        <li class="item"><a href="./diary.html">다꾸 용품</a></li>
+    </ul>
+    <h2>다이어리 꾸미기 용품</h2>
+    <table>
+        <tr>
+            <th>상품번호</th>
+            <th>상품이미지</th>
+            <th>상품명</th>
+            <th>가격</th>
+        </tr>
+        <tr>
+            <td>031</td>
+            <td><a href="./031.html"><img src="./img/top5.PNG"></a></td>
+            <td><a href="./031.html">미세스 그로스만 스티커 M 프리미엄</a></td>
+            <td>2,900원</td>
+        </tr>
+        <tr>
+            <td>032</td>
+            <td><a href="./032.html"><img src="./img/top10.PNG"></a></td>
+            <td><a href="./032.html">클로즈핀 타케이미키 마스킹테이프</a></td>
+            <td>3,400원</td>
+        </tr>
+    </table>
+</body>
+
+</html>
