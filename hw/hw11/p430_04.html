@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>p.430 04번 문제</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>이름</td>
+            <td>가격</td>
+            <td>개수</td>
+        </tr>
+        <tr>
+            <td id="a10"></td>
+            <td id="a20"></td>
+            <td id="a30"></td>
+        </tr>
+        <tr>
+            <td id="a11"></td>
+            <td id="a21"></td>
+            <td id="a31"></td>
+        </tr>
+        <tr>
+            <td id="a12"></td>
+            <td id="a22"></td>
+            <td id="a32"></td>
+        </tr>
+    </table>
+    <script>
+        var fruit = [
+            { name: '사과', price: 21000, num: 10 },
+            { name: '참외', price: 18000, num: 20 },
+            { name: '귤', price: 15000, num: 30 }
+        ]
+        for (i = 0; i < 3; i++) {
+            var fname = document.getElementById("a1" + i);
+            fname.textContent = fruit[i].name;
+            var fname = document.getElementById("a2" + i);
+            fname.textContent = fruit[i].price;
+            var fname = document.getElementById("a3" + i);
+            fname.textContent = fruit[i].num;
+        }
+    </script>
+</body>
+
+</html>
