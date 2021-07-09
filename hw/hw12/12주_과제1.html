@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>12주 과제1</title>
+    <style>
+        #btn input {
+            background-color: aqua;
+            border-radius: 5px;
+            padding: 10px;
+        }
+    </style>
+    <script>
+        function buttonClick(num) {
+            var sum = 0;
+            for (var i = 1; i <= num; i++) {
+                sum += i;
+            }
+            alert(num + '까지 더한 값은 ' + sum + '입니다.');
+        }
+    </script>
+</head>
+
+<body>
+    <div id="btn">
+        <input type="button" onclick="buttonClick(10);" value="10까지 더하기">
+        &emsp;
+        <input type="button" onclick="buttonClick(50);" value="50까지 더하기">
+        &emsp;
+        <input type="button" onclick="buttonClick(100);" value="100까지 더하기">
+    </div>
+</body>
+
+</html>

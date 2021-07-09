@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>12주 과제3</title>
+    <script>
+        function strPrt(str) {
+            if (str == null) {
+                //취소를 클릭
+                document.write('입력을 취소했습니다.');
+
+            } else if (str <= "Z" && str >= "A") {
+                //Z 보다 작고 A 보다 큰 문자
+                document.write('입력한 글자는 대문자 ' + str.fontcolor('red') + ' 입니다.');
+
+            } else if (str <= "z" && str >= "a") {
+                //z 보다 작고 a 보다 큰 문자
+                document.write('입력한 글자는 소문자 ' + str.fontcolor('red') + ' 입니다.');
+
+            } else {
+                //없거나 영문자가 아닌 경우
+                document.write(str + '는 영문자가 아닙니다.');
+            }
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <script>
+        var abc = prompt('영문자를 입력하세요');
+        strPrt(abc);
+    </script>
+</body>
+
+</html>
