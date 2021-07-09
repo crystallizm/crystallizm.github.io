@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>13주 [과제1]</title>
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        var cnt1 = 0;
+        var cnt2 = 0;
+        var cnt3 = 0;
+
+        $(document).ready(function () {
+            $("div.box1").mousedown(function () {
+                $("p:first", this).text("mousedown");
+                $("p:last", this).text('총 클릭 횟수 ' + ++cnt1);
+            });
+            $("div.box2").mousedown(function () {
+                $("p:first", this).text("mousedown");
+                $("p:last", this).text('총 클릭 횟수 ' + ++cnt2);
+            });
+            $("div.box3").mousedown(function () {
+                $("p:first", this).text("mousedown");
+                $("p:last", this).text('총 클릭 횟수 ' + ++cnt3);
+            });
+        });
+    </script>
+    <style>
+        .box1 {
+            padding: 0px;
+            width: 160px;
+            background-color: #81ff2d;
+        }
+
+        .box2 {
+            padding: 0px;
+            width: 160px;
+            background-color: rgb(107, 212, 177);
+        }
+
+        .box3 {
+            padding: 0px;
+            width: 160px;
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id=threeBox>
+        <div class="box1">
+            <p>마우스 클릭 횟수</p>
+            <p>0</p><br><br>
+        </div>
+        <div class="box2">
+            <p>마우스 클릭 횟수</p>
+            <p>0</p><br><br>
+        </div>
+        <div class="box3">
+            <p>마우스 클릭 횟수</p>
+            <p>0</p><br><br>
+        </div>
+    </div>
+</body>
+
+</html>

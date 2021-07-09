@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>13주 [과제2]</title>
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#img1").hide();
+            $("#img2").hide();
+            $("#img3").hide();
+            $("#soccer").click(function () {
+                $("#img1").show();
+                $("#img2").hide();
+                $("#img3").hide();
+            });
+            $("#base").click(function () {
+                $("#img1").hide();
+                $("#img2").show();
+                $("#img3").hide();
+            });
+            $("#basket").click(function () {
+                $("#img1").hide();
+                $("#img2").hide();
+                $("#img3").show();
+            });
+        });
+    </script>
+    <style>
+        * {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>당신이 좋아하는 스포츠는?</h1><br>
+    <div class="balls">
+        <button id="soccer">프로축구</button>
+        &emsp;
+        <button id="base">프로야구</button>
+        &emsp;
+        <button id="basket">프로농구</button>
+        <p></p>
+        <img id="img1" name="ball1" src="./img/soccerball.jpg">
+        <img id="img2" name="ball2" src="./img/baseball.jpg">
+        <img id="img3" name="ball3" src="./img/basketball.jpg">
+    </div>
+</body>
+
+</html>

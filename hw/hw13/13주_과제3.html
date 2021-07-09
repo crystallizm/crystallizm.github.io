@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>13주 [과제3]</title>
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        var n = 0;
+        $(document).ready(function () {
+            $("#img2").hide();
+            $("#clickBtn").click(function () {
+                $("#img2").slideToggle("slow");
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <img id="img" name="cat" src="./img/heatcat.jpeg" width="30%"><br><br>
+    <button id="clickBtn">큰 이미지 보기/닫기</button><br><br>
+    <img id="img2" name="cat" src="./img/heatcat.jpeg">
+
+</body>
+
+</html>
